@@ -1,58 +1,58 @@
 
 #A Comprehensive Formal Specification of ARINC 653 with Conformity Proof
 
-    ##A Comprehensive Formal Specification of ARINC 653 According to ARINC 653 P1-5
+##A Comprehensive Formal Specification of ARINC 653 According to ARINC 653 P1-5
 
-        ###Data Structures & Basic Functions
+###Data Structures & Basic Functions
 
-            [DataStructure](https://zf-zhangfeng.github.io/ARINC653P1-5Conformity/DataStructure)
+[DataStructure](https://zf-zhangfeng.github.io/ARINC653P1-5Conformity/DataStructure)
 
-        ###Basic Operations on Processes
+###Basic Operations on Processes
 
-            [ProcessAct](https://zf-zhangfeng.github.io/ARINC653P1-5Conformity/Base_Ops/Design_BsOps/ProcessAct_D)
-    
-        ###Operations on Ready Process Queues
+[ProcessAct](https://zf-zhangfeng.github.io/ARINC653P1-5Conformity/Base_Ops/Design_BsOps/ProcessAct_D)
 
-            [ReadyQue](https://zf-zhangfeng.github.io/ARINC653P1-5Conformity/Base_Ops/Design_BsOps/ReadyQue_D)
+###Operations on Ready Process Queues
 
-        ###Operations on Suspended Process Queues
+[ReadyQue](https://zf-zhangfeng.github.io/ARINC653P1-5Conformity/Base_Ops/Design_BsOps/ReadyQue_D)
 
-            [suspQue](https://zf-zhangfeng.github.io/ARINC653P1-5Conformity/Base_Ops/Design_BsOps/suspQue_D)
+###Operations on Suspended Process Queues
 
-        ###Operations on WAiting Process Queues
-    
-            [WaitQue](https://zf-zhangfeng.github.io/ARINC653P1-5Conformity/Base_Ops/Design_BsOps/WaitQue_D)
+[suspQue](https://zf-zhangfeng.github.io/ARINC653P1-5Conformity/Base_Ops/Design_BsOps/suspQue_D)
 
-        ###A Two-Level Scheduler
+###Operations on WAiting Process Queues
 
-            [Scheduler](https://zf-zhangfeng.github.io/ARINC653P1-5Conformity/Scheduler/Design_Sched/Scheduler_D)
+[WaitQue](https://zf-zhangfeng.github.io/ARINC653P1-5Conformity/Base_Ops/Design_BsOps/WaitQue_D)
 
-        ###Services
-            [HealthMonitor](https://zf-zhangfeng.github.io/ARINC653P1-5Conformity/Services_R/HealthMonitor)
+###A Two-Level Scheduler
 
-            [InterCom](https://zf-zhangfeng.github.io/ARINC653P1-5Conformity/Services_R/InterCom)
+[Scheduler](https://zf-zhangfeng.github.io/ARINC653P1-5Conformity/Scheduler/Design_Sched/Scheduler_D)
 
-            [IntraCom](https://zf-zhangfeng.github.io/ARINC653P1-5Conformity/Services_R/IntraCom)
+###Services
+[HealthMonitor](https://zf-zhangfeng.github.io/ARINC653P1-5Conformity/Services_R/HealthMonitor)
 
-            [Partition](https://zf-zhangfeng.github.io/ARINC653P1-5Conformity/Services_R/Partition)
+[InterCom](https://zf-zhangfeng.github.io/ARINC653P1-5Conformity/Services_R/InterCom)
 
-            [Process](https://zf-zhangfeng.github.io/ARINC653P1-5Conformity/Services_R/Process)
+[IntraCom](https://zf-zhangfeng.github.io/ARINC653P1-5Conformity/Services_R/IntraCom)
 
-            [Time](https://zf-zhangfeng.github.io/ARINC653P1-5Conformity/Services_R/Time)
+[Partition](https://zf-zhangfeng.github.io/ARINC653P1-5Conformity/Services_R/Partition)
+
+[Process](https://zf-zhangfeng.github.io/ARINC653P1-5Conformity/Services_R/Process)
+
+[Time](https://zf-zhangfeng.github.io/ARINC653P1-5Conformity/Services_R/Time)
 
 
-    ##A Formal Conformity Proof According to ARINC 653 P3A
+##A Formal Conformity Proof According to ARINC 653 P3A
 
-        [BasicLems](https://zf-zhangfeng.github.io/ARINC653P1-5Conformity/Services_FT/BasicLems)
+[BasicLems](https://zf-zhangfeng.github.io/ARINC653P1-5Conformity/Services_FT/BasicLems)
 
-        [FCP_HealthMonitor](https://zf-zhangfeng.github.io/ARINC653P1-5Conformity/Services_FT/HealthMonitor_FT)
+[FCP_HealthMonitor](https://zf-zhangfeng.github.io/ARINC653P1-5Conformity/Services_FT/HealthMonitor_FT)
 
-        [FCP_InterCom](https://zf-zhangfeng.github.io/ARINC653P1-5Conformity/Services_FT/InterCom_FT)
+[FCP_InterCom](https://zf-zhangfeng.github.io/ARINC653P1-5Conformity/Services_FT/InterCom_FT)
 
-        [FCP_IntraCom](https://zf-zhangfeng.github.io/ARINC653P1-5Conformity/Services_FT/IntraCom_FT)
+[FCP_IntraCom](https://zf-zhangfeng.github.io/ARINC653P1-5Conformity/Services_FT/IntraCom_FT)
 
-        [FCP_Partition](https://zf-zhangfeng.github.io/ARINC653P1-5Conformity/Services_FT/Partition_FT)
+[FCP_Partition](https://zf-zhangfeng.github.io/ARINC653P1-5Conformity/Services_FT/Partition_FT)
 
-        [FCP_Process](https://zf-zhangfeng.github.io/ARINC653P1-5Conformity/Services_FT/Process_FT)
+[FCP_Process](https://zf-zhangfeng.github.io/ARINC653P1-5Conformity/Services_FT/Process_FT)
 
-        [FCP_Time](https://zf-zhangfeng.github.io/ARINC653P1-5Conformity/Services_FT/Time_FT)
+[FCP_Time](https://zf-zhangfeng.github.io/ARINC653P1-5Conformity/Services_FT/Time_FT)
