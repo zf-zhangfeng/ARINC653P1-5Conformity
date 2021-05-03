@@ -1,5 +1,5 @@
 
-[specification](https://github.com/zf-zhangfeng/ARINC653P1-5Conformity/blob/main/DataStructure.html)
+[specification](https://zf-zhangfeng.github.io/ARINC653P1-5Conformity/DataStructure)
 
 
 
