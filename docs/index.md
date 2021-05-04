@@ -1,7 +1,7 @@
 
 # A Comprehensive Formal Specification of ARINC 653 with Conformity Proof
 
-### A Comprehensive Formal Specification of ARINC 653 According to ARINC 653 P1-5
+### A Comprehensive Formal Specification According to ARINC 653 P1-5
   - Data Structures & Basic Functions
     - [DataStructure](https://zf-zhangfeng.github.io/ARINC653P1-5Conformity/DataStructure)
   - Basic Operations on Processes
