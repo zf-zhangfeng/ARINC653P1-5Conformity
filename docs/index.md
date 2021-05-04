@@ -1,6 +1,5 @@
 
 # A Comprehensive Formal Specification of ARINC 653 with Conformity Proof
--------------------------------------------------------------------------
 
 ## A Comprehensive Formal Specification of ARINC 653 According to ARINC 653 P1-5
 
