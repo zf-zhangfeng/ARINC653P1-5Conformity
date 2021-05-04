@@ -24,7 +24,7 @@
     - [Time](https://zf-zhangfeng.github.io/ARINC653P1-5Conformity/Services_R/Time)
   
 
-##A Formal Conformity Proof According to ARINC 653 P3A
+##A Formal Conformity Proof (FCP) According to ARINC 653 P3A
 
   - [BasicLems](https://zf-zhangfeng.github.io/ARINC653P1-5Conformity/Services_FT/BasicLems)
   - [FCP_HealthMonitor](https://zf-zhangfeng.github.io/ARINC653P1-5Conformity/Services_FT/HealthMonitor_FT)
