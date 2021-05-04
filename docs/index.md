@@ -1,7 +1,7 @@
 
 # A Comprehensive Formal Specification of ARINC 653 with Conformity Proof
 
-## A Comprehensive Formal Specification of ARINC 653 According to ARINC 653 P1-5
+### A Comprehensive Formal Specification of ARINC 653 According to ARINC 653 P1-5
 
   - Data Structures & Basic Functions
     - [DataStructure](https://zf-zhangfeng.github.io/ARINC653P1-5Conformity/DataStructure)
@@ -23,7 +23,7 @@
     - [Process](https://zf-zhangfeng.github.io/ARINC653P1-5Conformity/Services_R/Process)
     - [Time](https://zf-zhangfeng.github.io/ARINC653P1-5Conformity/Services_R/Time)
 
-## A Formal Conformity Proof (FCP) According to ARINC 653 P3A
+### A Formal Conformity Proof (FCP) According to ARINC 653 P3A
 
   - [BasicLems](https://zf-zhangfeng.github.io/ARINC653P1-5Conformity/Services_FT/BasicLems)
   - [FCP_HealthMonitor](https://zf-zhangfeng.github.io/ARINC653P1-5Conformity/Services_FT/HealthMonitor_FT)
