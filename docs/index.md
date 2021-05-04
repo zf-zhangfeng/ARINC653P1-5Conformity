@@ -10,7 +10,7 @@
     - [ReadyQue](https://zf-zhangfeng.github.io/ARINC653P1-5Conformity/Base_Ops/Design_BsOps/ReadyQue_D)
   - Operations on Suspended Process Queues
     - [suspQue](https://zf-zhangfeng.github.io/ARINC653P1-5Conformity/Base_Ops/Design_BsOps/suspQue_D)
-  - Operations on WAiting Process Queues
+  - Operations on Waiting Process Queues
     - [WaitQue](https://zf-zhangfeng.github.io/ARINC653P1-5Conformity/Base_Ops/Design_BsOps/WaitQue_D)
   - A Two-Level Scheduler
     - [Scheduler](https://zf-zhangfeng.github.io/ARINC653P1-5Conformity/Scheduler/Design_Sched/Scheduler_D)
