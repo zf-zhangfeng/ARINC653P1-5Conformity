@@ -1,3 +1,6 @@
+- theory Scheduler_D
+- imports ["../../Base_Ops/Design_BsOps/ReadyQue_D"](https://zf-zhangfeng.github.io/ARINC653P1-5Conformity/Base_Ops/Design_BsOps/ReadyQue_D)
+
 <html>
 <head>
 <title>Scheduler_D.thy</title>
