@@ -1,3 +1,6 @@
+- theory Partition
+- imports  ["../Base_Ops/Design_BsOps/ProcessAct_D"](https://zf-zhangfeng.github.io/ARINC653P1-5Conformity/Base_Ops/Design_BsOps/ProcessAct_D)
+
 <html>
 <head>
 <title>Partition.thy</title>
