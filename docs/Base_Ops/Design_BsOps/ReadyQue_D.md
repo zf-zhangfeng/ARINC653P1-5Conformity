@@ -1,3 +1,8 @@
+
+theory ReadyQue_D
+
+imports ["../../DataStructure"](https://zf-zhangfeng.github.io/ARINC653P1-5Conformity/DataStructure)
+
 <html>
 <head>
 <title>ReadyQue_D.thy</title>
