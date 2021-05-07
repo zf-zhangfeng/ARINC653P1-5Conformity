@@ -70,7 +70,7 @@
 <span style="background:#ffffffff; border-right:solid 2px black; margin-right:5px; "><font color="#ff000000">  62 </font></span><font color="#ff00cc">     else (let </font>
 <span style="background:#ffffffff; border-right:solid 2px black; margin-right:5px; "><font color="#ff000000">  63 </font></span><font color="#ff00cc">              attr_set_priority_entry_stack = setErrorProcAttr pattr entry_point stack_sz;</font>
 <span style="background:#ffffffff; border-right:solid 2px black; margin-right:5px; "><font color="#ff000000">  64 </font></span><font color="#ff00cc">              s_created_eh = createProc s (the cur_part_id, the cur_proc_id) attr_set_priority_entry_stack;</font>
-<span style="background:#ffffffff; border-right:solid 2px black; margin-right:5px; "><font color="#ff990066">  65 </font></span><font color="#ff00cc">              s_errotListEmpty = setErrorProcListEmpty s (the cur_part_id) in</font>
+<span style="background:#ffffffff; border-right:solid 2px black; margin-right:5px; "><font color="#ff990066">  65 </font></span><font color="#ff00cc">              s_errotListEmpty = setErrorProcListEmpty s_created_eh (the cur_part_id) in</font>
 <span style="background:#ffffffff; border-right:solid 2px black; margin-right:5px; "><font color="#ff000000">  66 </font></span><font color="#ff00cc">            (s_errotListEmpty , NO_ERROR)</font>
 <span style="background:#ffffffff; border-right:solid 2px black; margin-right:5px; "><font color="#ff000000">  67 </font></span><font color="#ff00cc">           )</font>
 <span style="background:#ffffffff; border-right:solid 2px black; margin-right:5px; "><font color="#ff000000">  68 </font></span><font color="#ff00cc">  )&quot;</font>
@@ -88,8 +88,8 @@
 <span style="background:#ffffffff; border-right:solid 2px black; margin-right:5px; "><font color="#ff990066">  80 </font></span><font color="#ff00cc">        (s , None ,  NO_ACTION)</font>
 <span style="background:#ffffffff; border-right:solid 2px black; margin-right:5px; "><font color="#ff000000">  81 </font></span><font color="#ff00cc">    else</font>
 <span style="background:#ffffffff; border-right:solid 2px black; margin-right:5px; "><font color="#ff000000">  82 </font></span><font color="#ff00cc">        let reportEr = getError s (the cur_part_id);</font>
-<span style="background:#ffffffff; border-right:solid 2px black; margin-right:5px; "><font color="#ff000000">  83 </font></span><font color="#ff00cc">            s_clearFstEr = deleteReportedErro s (the cur_part_id);</font>
-<span style="background:#ffffffff; border-right:solid 2px black; margin-right:5px; "><font color="#ff000000">  84 </font></span><font color="#ff00cc">            s_clearFstEr_rst = rstHMStatuCalled s (the cur_part_id) in</font>
+<span style="background:#ffffffff; border-right:solid 2px black; margin-right:5px; "><font color="#ff000000">  83 </font></span><font color="#ff00cc">            s_clearFstEr = deleteReportedErro s core_id;</font>
+<span style="background:#ffffffff; border-right:solid 2px black; margin-right:5px; "><font color="#ff000000">  84 </font></span><font color="#ff00cc">            s_clearFstEr_rst = rstHMStatuCalled s_clearFstEr (the cur_part_id) in</font>
 <span style="background:#ffffffff; border-right:solid 2px black; margin-right:5px; "><font color="#ff990066">  85 </font></span><font color="#ff00cc">          (s_clearFstEr_rst, reportEr, NO_ERROR)&quot;</font>
 <span style="background:#ffffffff; border-right:solid 2px black; margin-right:5px; "><font color="#ff000000">  86 </font></span>
 <span style="background:#ffffffff; border-right:solid 2px black; margin-right:5px; "><font color="#ff000000">  87 </font></span><font color="#cc0000">(*===RAISE_APPLICATION_ERROR service===*)</font>
@@ -109,7 +109,7 @@
 <span style="background:#ffffffff; border-right:solid 2px black; margin-right:5px; "><font color="#ff000000"> 101 </font></span><font color="#ff00cc">      let s_setError = setError s (the cur_part_id) reported_error in</font>
 <span style="background:#ffffffff; border-right:solid 2px black; margin-right:5px; "><font color="#ff000000"> 102 </font></span><font color="#ff00cc">        if getProcSta s (the cur_part_id, HM_PROC_ID) &ne; Some RUNNING then</font>
 <span style="background:#ffffffff; border-right:solid 2px black; margin-right:5px; "><font color="#ff000000"> 103 </font></span><font color="#ff00cc">         let s_setError_called = setHMCalled s_setError (the cur_part_id);</font>
-<span style="background:#ffffffff; border-right:solid 2px black; margin-right:5px; "><font color="#ff000000"> 104 </font></span><font color="#ff00cc">                s_setError_calledStaus = setHMCalled s_setError_called (the cur_part_id);</font>
+<span style="background:#ffffffff; border-right:solid 2px black; margin-right:5px; "><font color="#ff000000"> 104 </font></span><font color="#ff00cc">                s_setError_calledStaus = setHMStatuCalled s_setError_called (the cur_part_id);</font>
 <span style="background:#ffffffff; border-right:solid 2px black; margin-right:5px; "><font color="#ff990066"> 105 </font></span><font color="#ff00cc">                s_setError_aloneHM = procAlone s_setError_calledStaus (the cur_part_id, HM_PROC_ID);     </font>
 <span style="background:#ffffffff; border-right:solid 2px black; margin-right:5px; "><font color="#ff000000"> 106 </font></span><font color="#ff00cc">                s_setError_alone_rdy_HM = procReady s_setError_aloneHM (the cur_part_id, HM_PROC_ID) in</font>
 <span style="background:#ffffffff; border-right:solid 2px black; margin-right:5px; "><font color="#ff000000"> 107 </font></span><font color="#ff00cc">          (schedule_Abs s_setError_alone_rdy_HM core_id, NO_ERROR)</font>
@@ -142,12 +142,10 @@
 <span style="background:#ffffffff; border-right:solid 2px black; margin-right:5px; "><font color="#ff000000"> 134 </font></span><font color="#ff00cc">   else if partBlngCore (the cur_part_id) &ne; Some core_id then</font>
 <span style="background:#ffffffff; border-right:solid 2px black; margin-right:5px; "><font color="#ff990066"> 135 </font></span><font color="#ff00cc">      (s , INVALID_CONFIG)</font>
 <span style="background:#ffffffff; border-right:solid 2px black; margin-right:5px; "><font color="#ff000000"> 136 </font></span><font color="#ff00cc">   else (setConcurConf s core_id hct, NO_ERROR)&quot;</font>
-<span style="background:#ffffffff; border-right:solid 2px black; margin-right:5px; "><font color="#ff000000"> 137 </font></span>
-<span style="background:#ffffffff; border-right:solid 2px black; margin-right:5px; "><font color="#ff000000"> 138 </font></span>
-<span style="background:#ffffffff; border-right:solid 2px black; margin-right:5px; "><font color="#ff000000"> 139 </font></span>   
-<span style="background:#ffffffff; border-right:solid 2px black; margin-right:5px; "><font color="#ff990066"> 140 </font></span><font color="#009966"><strong>end</strong></font>
-<span style="background:#ffffffff; border-right:solid 2px black; margin-right:5px; "><font color="#ff000000"> 141 </font></span>
-<span style="background:#ffffffff; border-right:solid 2px black; margin-right:5px; "><font color="#ff000000"> 142 </font></span>
+<span style="background:#ffffffff; border-right:solid 2px black; margin-right:5px; "><font color="#ff000000"> 137 </font></span>   
+<span style="background:#ffffffff; border-right:solid 2px black; margin-right:5px; "><font color="#ff000000"> 138 </font></span><font color="#009966"><strong>end</strong></font>
+<span style="background:#ffffffff; border-right:solid 2px black; margin-right:5px; "><font color="#ff000000"> 139 </font></span>
+<span style="background:#ffffffff; border-right:solid 2px black; margin-right:5px; "><font color="#ff990066"> 140 </font></span>
 </font></pre>
 </body>
 </html>
