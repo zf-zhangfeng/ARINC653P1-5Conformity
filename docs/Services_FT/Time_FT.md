@@ -1,5 +1,5 @@
 - theory Time_FT
-- imports  "../Services_R/Time"[BasicLems](https://zf-zhangfeng.github.io/ARINC653P1-5Conformity/Services_FT/BasicLems)
+- imports [BasicLems](https://zf-zhangfeng.github.io/ARINC653P1-5Conformity/Services_FT/BasicLems)
 
 
 <html>
