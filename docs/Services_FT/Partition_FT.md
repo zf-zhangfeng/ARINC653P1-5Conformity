@@ -1,3 +1,6 @@
+- theory Partition_FT
+- imports  ["../Services_R/Partition"]((https://zf-zhangfeng.github.io/ARINC653P1-5Conformity/Services_R/Partition))
+
 <html>
 <head>
 <title>Partition_FT.thy</title>
