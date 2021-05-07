@@ -1,5 +1,5 @@
 - theory Partition_FT
-- imports  ["../Services_R/Partition"]((https://zf-zhangfeng.github.io/ARINC653P1-5Conformity/Services_R/Partition))
+- imports  [BasicLems](https://zf-zhangfeng.github.io/ARINC653P1-5Conformity/Services_FT/BasicLems)
 
 <html>
 <head>
@@ -19,7 +19,7 @@
 <span style="background:#ffffffff; border-right:solid 2px black; margin-right:5px; "><font color="#ff000000">   8 </font></span><font color="#006699"><strong>section</strong></font><font color="#6600cc">&lsaquo;</font><font color="#6600cc">C</font><font color="#6600cc">o</font><font color="#6600cc">n</font><font color="#6600cc">f</font><font color="#6600cc">o</font><font color="#6600cc">r</font><font color="#6600cc">m</font><font color="#6600cc">i</font><font color="#6600cc">t</font><font color="#6600cc">y</font><font color="#6600cc"> </font><font color="#6600cc">P</font><font color="#6600cc">r</font><font color="#6600cc">o</font><font color="#6600cc">o</font><font color="#6600cc">f</font><font color="#6600cc"> </font><font color="#6600cc">o</font><font color="#6600cc">f</font><font color="#6600cc"> </font><font color="#6600cc">P</font><font color="#6600cc">a</font><font color="#6600cc">r</font><font color="#6600cc">t</font><font color="#6600cc">i</font><font color="#6600cc">t</font><font color="#6600cc">i</font><font color="#6600cc">o</font><font color="#6600cc">n</font><font color="#6600cc">s</font><font color="#6600cc">s</font><font color="#6600cc">&rsaquo;</font>
 <span style="background:#ffffffff; border-right:solid 2px black; margin-right:5px; "><font color="#ff000000">   9 </font></span>
 <span style="background:#ffffffff; border-right:solid 2px black; margin-right:5px; "><font color="#ff990066">  10 </font></span><font color="#006699"><strong>theory</strong></font> Partition_FT
-<span style="background:#ffffffff; border-right:solid 2px black; margin-right:5px; "><font color="#ff000000">  11 </font></span><font color="#009966"><strong>imports</strong></font>  <font color="#ff00cc">&quot;../Services_R/Partition&quot;</font>
+<span style="background:#ffffffff; border-right:solid 2px black; margin-right:5px; "><font color="#ff000000">  11 </font></span><font color="#009966"><strong>imports</strong></font>  <font color="#ff00cc">BasicLems</font>
 <span style="background:#ffffffff; border-right:solid 2px black; margin-right:5px; "><font color="#ff000000">  12 </font></span><font color="#009966"><strong>begin</strong></font>
 <span style="background:#ffffffff; border-right:solid 2px black; margin-right:5px; "><font color="#ff000000">  13 </font></span>
 <span style="background:#ffffffff; border-right:solid 2px black; margin-right:5px; "><font color="#ff000000">  14 </font></span><font color="#006699"><strong>lemma</strong></font> GET_PARTITION_STATUS <font color="#000000"><strong>:</strong></font>
