@@ -1,3 +1,7 @@
+- theory IntraCom_FT
+- imports ["../Services_R/IntraCom"](https://zf-zhangfeng.github.io/ARINC653P1-5Conformity/Services_R/IntraCom)
+          ["./Process_FT"](https://zf-zhangfeng.github.io/ARINC653P1-5Conformity/Services_FT/Process_FT)
+
 <html>
 <head>
 <title>IntraCom_FT.thy</title>
