@@ -1,3 +1,8 @@
+- theory IntraCom
+- imports  ["../Scheduler/Design_Sched/Scheduler_D"](https://zf-zhangfeng.github.io/ARINC653P1-5Conformity/Scheduler/Design_Sched/Scheduler_D)
+           ["../Base_Ops/Design_BsOps/ProcessAct_D"](https://zf-zhangfeng.github.io/ARINC653P1-5Conformity/Base_Ops/Design_BsOps/ProcessAct_D)
+           ["../Base_Ops/Design_BsOps/WaitQue_D"](https://zf-zhangfeng.github.io/ARINC653P1-5Conformity/Base_Ops/Design_BsOps/WaitQue_D)
+
 <html>
 <head>
 <title>IntraCom.thy</title>
