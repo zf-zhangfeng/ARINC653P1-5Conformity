@@ -1,3 +1,11 @@
+- theory BasicLems
+- imports ["../Services_R/HealthMonitor"](https://zf-zhangfeng.github.io/ARINC653P1-5Conformity/Services_R/HealthMonitor)
+          ["../Services_R/InterCom"](https://zf-zhangfeng.github.io/ARINC653P1-5Conformity/Services_R/InterCom)
+          ["../Services_R/IntraCom"](https://zf-zhangfeng.github.io/ARINC653P1-5Conformity/Services_R/IntraCom)
+          ["../Services_R/Partition"](https://zf-zhangfeng.github.io/ARINC653P1-5Conformity/Services_R/Partition)
+          ["../Services_R/Process"](https://zf-zhangfeng.github.io/ARINC653P1-5Conformity/Services_R/Process)
+          ["../Services_R/Time"](https://zf-zhangfeng.github.io/ARINC653P1-5Conformity/Services_R/Time)
+
 <html>
 <head>
 <title>BasicLems.thy</title>
