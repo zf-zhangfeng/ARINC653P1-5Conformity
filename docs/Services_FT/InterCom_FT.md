@@ -1,3 +1,7 @@
+- theory InterCom_FT
+- imports ["../Services_R/InterCom"]((https://zf-zhangfeng.github.io/ARINC653P1-5Conformity/Services_R/InterCom))
+          [BasicLems](https://zf-zhangfeng.github.io/ARINC653P1-5Conformity/Services_FT/BasicLems)
+
 <html>
 <head>
 <title>InterCom_FT.thy</title>
